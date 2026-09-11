@@ -1,1 +1,10 @@
-
+{
+  "name": "JATTOX Government Exam Preparation",
+  "short_name": "JATTOX",
+  "description": "Government exam preparation platform by DK Chaudhary",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#07111f",
+  "theme_color": "#07111f",
+  "orientation": "portrait"
+}
