@@ -1,1 +1,91 @@
+{
+  "brand": "JATTOX",
+  "owner": "DK Chaudhary",
 
+  "exams": {
+
+    "UP Police Constable": {
+      "category": "Police",
+      "questions": 150,
+      "time_minutes": 120,
+      "subjects": [
+        "General Knowledge",
+        "General Hindi",
+        "Numerical & Mental Ability",
+        "Mental Aptitude / Reasoning"
+      ]
+    },
+
+    "SSC CHSL": {
+      "category": "SSC",
+      "questions": 100,
+      "time_minutes": 60,
+      "subjects": [
+        "English Language",
+        "General Intelligence",
+        "Quantitative Aptitude",
+        "General Awareness"
+      ]
+    },
+
+    "RRB NTPC": {
+      "category": "Railway",
+      "questions": 100,
+      "time_minutes": 90,
+      "subjects": [
+        "General Awareness",
+        "Mathematics",
+        "General Intelligence & Reasoning"
+      ]
+    },
+
+    "Defence Technical": {
+      "category": "Defence",
+      "questions": 100,
+      "time_minutes": 120,
+      "subjects": [
+        "Technical Mathematics",
+        "Physics",
+        "Chemistry",
+        "English",
+        "General Knowledge"
+      ]
+    },
+
+    "Defence Non-Technical": {
+      "category": "Defence",
+      "questions": 100,
+      "time_minutes": 120,
+      "subjects": [
+        "Non-Technical Mathematics",
+        "Reasoning",
+        "English",
+        "General Knowledge",
+        "General Science"
+      ]
+    }
+
+  },
+
+  "pyq_years": [
+    2025,
+    2024,
+    2023,
+    2022,
+    2021,
+    2020,
+    2019,
+    2018,
+    2017,
+    2016
+  ],
+
+  "production_requirements": [
+    "Verify every exam pattern from its official notification.",
+    "Use authorized or original question content.",
+    "Connect Firebase or another database.",
+    "Use a secure backend for real AI API calls.",
+    "Create an admin panel for recruitment updates.",
+    "Store student scores and mock history."
+  ]
+}
