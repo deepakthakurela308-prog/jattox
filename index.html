@@ -1,1 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <meta name="theme-color" content="#07111f">
+  <meta name="description" content="JATTOX Government Exam Preparation Platform">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="manifest.json">
+
+  <title>JATTOX | Government Exam Preparation</title>
+</head>
+
+<body>
+
+<header class="topbar">
+
+  <a href="#home" class="brand">
+    <img src="assets/jattox-logo.png" alt="JATTOX Logo">
+    <span>
+      <b>JATTOX</b>
+      <small>Government Exam Preparation</small>
+    </span>
+  </a>
+
+  <button class="menu-btn" id="menuBtn">☰</button>
+
+  <nav id="nav">
+    <a href="#home">Home</a>
+    <a href="#exams">Exams</a>
+    <a href="#mock">Mock Tests</a>
+    <a href="#pyq">10-Year PYQ</a>
+    <a href="#notes">Notes</a>
+    <a href="#jobs">Jobs</a>
+    <a href="#ai">AI Tutor</a>
+  </nav>
+
+</header>
+
+
+<main>
+
+<!-- HOME -->
+
+<section id="home" class="page active">
+
+  <div class="hero">
+
+    <div class="hero-content">
+
+      <span class="badge">JATTOX • BY DK CHAUDHARY</span>
+
+      <h1>
+        Prepare Smart.<br>
+        <span>Crack Government Exams.</span>
+      </h1>
+
+      <p>
+        Mock Tests, Exact Exam Pattern, Previous Year Papers,
+        Bilingual Notes and AI Doubt Support — all in one platform.
+      </p>
+
+      <div class="actions">
+
+        <button class="primary" onclick="showPage('exams')">
+          Explore Exams →
+        </button>
+
+        <button class="secondary" onclick="showPage('mock')">
+          Start Mock Test
+        </button>
+
+      </div>
+
+      <div class="trust">
+        <span>✓ Hindi + English</span>
+        <span>✓ Exam-wise Pattern</span>
+        <span>✓ Smart Analysis</span>
+      </div>
+
+    </div>
+
+
+    <div class="hero-card">
+
+      <div class="logo-circle">J</div>
+
+      <h3>JATTOX Dashboard</h3>
+
+      <div class="stat">
+        <b>10+</b>
+        <span>Years PYQ</span>
+      </div>
+
+      <div class="stat">
+        <b>2</b>
+        <span>Languages</span>
+      </div>
+
+      <div class="stat">
+        <b>24×7</b>
+        <span>Practice</span>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="section-head">
+    <span>WHY JATTOX</span>
+    <h2>Everything an aspirant needs</h2>
+  </div>
+
+
+  <div class="grid four">
+
+    <div class="feature">
+      <div class="icon">🎯</div>
+      <h3>Exact Blueprint</h3>
+      <p>
+        Exam-wise questions, subjects, marks and time according
+        to the applicable official pattern.
+      </p>
+    </div>
+
+    <div class="feature">
+      <div class="icon">🌐</div>
+      <h3>Hindi + English</h3>
+      <p>
+        Bilingual learning for Hindi-medium and English-medium students.
+      </p>
+    </div>
+
+    <div class="feature">
+      <div class="icon">📚</div>
+      <h3>10-Year PYQ</h3>
+      <p>
+        Previous year practice organized by exam, year, shift and topic.
+      </p>
+    </div>
+
+    <div class="feature">
+      <div class="icon">🤖</div>
+      <h3>AI Tutor</h3>
+      <p>
+        Ask doubts and learn concepts with step-by-step explanations.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- EXAMS -->
+
+<section id="exams" class="page">
+
+  <div class="section-head">
+    <span>EXAM HUB</span>
+    <h2>Choose Your Government Exam</h2>
+    <p>Select an exam to see its subjects and blueprint.</p>
+  </div>
+
+  <div id="examGrid" class="grid three"></div>
+
+</section>
+
+
+
+<!-- MOCK -->
+
+<section id="mock" class="page">
+
+  <div class="section-head">
+    <span>MOCK TEST CENTER</span>
+    <h2>Start Mock Test</h2>
+  </div>
+
+  <div class="panel">
+
+    <label>Select Exam</label>
+
+    <select id="mockExam"></select>
+
+    <div id="blueprint"></div>
+
+    <button class="primary full" id="startMock">
+      Start Mock Test
+    </button>
+
+  </div>
+
+
+  <div id="mockBox" class="panel hidden"></div>
+
+</section>
+
+
+
+<!-- PYQ -->
+
+<section id="pyq" class="page">
+
+  <div class="section-head">
+
+    <span>PREVIOUS YEAR PAPERS</span>
+
+    <h2>10-Year PYQ Practice</h2>
+
+    <p>
+      Year, shift and topic information can be displayed with every question.
+    </p>
+
+  </div>
+
+
+  <div class="filters">
+
+    <select id="pyqExam"></select>
+
+    <select id="pyqYear"></select>
+
+  </div>
+
+
+  <div id="pyqList" class="list"></div>
+
+</section>
+
+
+
+<!-- NOTES -->
+
+<section id="notes" class="page">
+
+  <div class="section-head">
+
+    <span>STUDY MATERIAL</span>
+
+    <h2>Premium Study Notes</h2>
+
+    <p>
+      Concept → Theory → Examples → Diagram → PYQ → Hard Questions → Revision
+    </p>
+
+  </div>
+
+  <div id="notesGrid" class="grid three"></div>
+
+</section>
+
+
+
+<!-- JOBS -->
+
+<section id="jobs" class="page">
+
+  <div class="section-head">
+
+    <span>JOB TRACKER</span>
+
+    <h2>Latest Government Jobs</h2>
+
+    <p>
+      Recruitment information should be verified from official notifications.
+    </p>
+
+  </div>
+
+  <div class="notice">
+    ⚠ Demo mode: Connect official-source verified data through the admin/database
+    before publishing live recruitment dates.
+  </div>
+
+  <div id="jobsList" class="list"></div>
+
+</section>
+
+
+
+<!-- AI -->
+
+<section id="ai" class="page">
+
+  <div class="section-head">
+
+    <span>JATTOX AI TUTOR</span>
+
+    <h2>Ask Your Doubt 🤖</h2>
+
+    <p>
+      Ask questions in Hindi or English.
+    </p>
+
+  </div>
+
+
+  <div class="chat panel">
+
+    <div id="chatMessages" class="chat-messages">
+
+      <div class="message bot">
+
+        <b>JATTOX AI</b>
+
+        <br>
+
+        Namaste! Apna question Hindi ya English mein poochho.
+
+      </div>
+
+    </div>
+
+
+    <div class="chat-input">
+
+      <input
+        id="aiInput"
+        type="text"
+        placeholder="Type your doubt..."
+      >
+
+      <button class="primary" id="sendAI">
+        Send
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+
+
+<footer>
+
+  <div>
+    <b>JATTOX</b>
+    <span>Government Exam Preparation Platform</span>
+  </div>
+
+  <div>
+    By <b>DK Chaudhary</b>
+    <br>
+    jattox017@gmail.com
+    <br>
+    9761628549
+  </div>
+
+</footer>
+
+
+<script src="js/app.js"></script>
+
+</body>
+  </html>
